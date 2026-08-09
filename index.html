@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WILDGUARD | Wildlife Protection Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div>
+      <div class="brand">WILDGUARD</div>
+      <div class="subtitle">AI Wildlife Protection & Risk Prediction</div>
+    </div>
+    <div class="status">● SYSTEM ONLINE</div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <h1>Wildlife Risk Command Center</h1>
+        <p>Monitor wildlife movement, identify risk zones and support faster ranger response.</p>
+      </div>
+      <div class="timestamp" id="time"></div>
+    </section>
+
+    <section class="cards">
+      <div class="card"><span>Active Alerts</span><strong id="alerts">2</strong><small>Requires attention</small></div>
+      <div class="card"><span>High-Risk Zones</span><strong>1</strong><small>Near village boundary</small></div>
+      <div class="card"><span>Tracked Animals</span><strong>3</strong><small>Sample live feed</small></div>
+      <div class="card"><span>Risk Accuracy</span><strong>92%</strong><small>Prototype metric</small></div>
+    </section>
+
+    <section class="grid">
+      <div class="panel map-panel">
+        <div class="panel-title"><h2>Risk Zone Map</h2><span>Forest Region</span></div>
+        <div class="map">
+          <div class="zone low">LOW RISK</div>
+          <div class="zone medium">MEDIUM RISK</div>
+          <div class="zone high">HIGH RISK</div>
+          <div class="village">VILLAGE</div>
+          <div class="path p1"></div><div class="path p2"></div>
+          <div class="animal a1">🐘</div><div class="animal a2">🦌</div><div class="animal a3">🐆</div>
+        </div>
+        <div class="legend">
+          <span><i class="low-dot"></i>Low</span>
+          <span><i class="med-dot"></i>Medium</span>
+          <span><i class="high-dot"></i>High</span>
+          <span>● Animal movement</span>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-title"><h2>Ranger Alerts</h2><span>Priority</span></div>
+        <div class="alert high-alert"><b>HIGH</b><p>Wildlife movement detected near village boundary.</p></div>
+        <div class="alert medium-alert"><b>MEDIUM</b><p>Increased animal activity near river edge.</p></div>
+        <button onclick="acknowledge()">Acknowledge Alerts</button>
+      </div>
+    </section>
+
+    <section class="grid lower">
+      <div class="panel">
+        <div class="panel-title"><h2>Wildlife Activity</h2><span>Today</span></div>
+        <div class="animal-row"><span>🐘 Elephant</span><b>High</b><em>Village Boundary</em></div>
+        <div class="animal-row"><span>🦌 Deer</span><b>Normal</b><em>North Forest</em></div>
+        <div class="animal-row"><span>🐆 Leopard</span><b>Medium</b><em>River Edge</em></div>
+      </div>
+      <div class="panel">
+        <div class="panel-title"><h2>Risk Score</h2><span>AI Prototype</span></div>
+        <div class="score"><div class="ring">87<small>/100</small></div><div><b>High Risk</b><p>Movement is close to a populated boundary.</p></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>WILDGUARD • Hackathon Prototype • Built for safer coexistence between wildlife and communities</footer>
+  <script src="app.js"></script>
+</body>
+</html>

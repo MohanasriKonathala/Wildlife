@@ -1,0 +1,46 @@
+{
+  "riskZones": [
+    {
+      "name": "North Forest",
+      "risk": "Low",
+      "score": 22
+    },
+    {
+      "name": "River Edge",
+      "risk": "Medium",
+      "score": 58
+    },
+    {
+      "name": "Village Boundary",
+      "risk": "High",
+      "score": 87
+    }
+  ],
+  "animals": [
+    {
+      "animal": "Elephant",
+      "location": "Village Boundary",
+      "activity": "High"
+    },
+    {
+      "animal": "Deer",
+      "location": "North Forest",
+      "activity": "Normal"
+    },
+    {
+      "animal": "Leopard",
+      "location": "River Edge",
+      "activity": "Medium"
+    }
+  ],
+  "alerts": [
+    {
+      "priority": "HIGH",
+      "message": "Wildlife movement detected near village boundary"
+    },
+    {
+      "priority": "MEDIUM",
+      "message": "Increased animal activity near river edge"
+    }
+  ]
+}
